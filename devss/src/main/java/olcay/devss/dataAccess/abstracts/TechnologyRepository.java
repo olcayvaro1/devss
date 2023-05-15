@@ -6,6 +6,4 @@ import olcay.devss.entities.concretes.Technology;
 
 public interface TechnologyRepository extends JpaRepository<Technology, Integer> {
 	
-	
-
 }

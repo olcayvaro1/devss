@@ -2,11 +2,16 @@ package olcay.devss.business.abstracts;
 
 import java.util.List;
 
-import olcay.devss.entities.concretes.Technology;
+import olcay.devss.business.requests.CreateTechnologyRequest;
+import olcay.devss.business.responses.GetAllTechnologiesResponse;
 
 
 public interface TechnologyService {
 	
-	List<Technology> getAll();
+	List<GetAllTechnologiesResponse> getAll();
+	
+	void add(CreateTechnologyRequest createTechnologyRequest);
+	
+	void delete(int id);
 
 }
