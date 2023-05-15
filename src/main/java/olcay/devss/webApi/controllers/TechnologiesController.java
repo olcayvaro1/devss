@@ -43,6 +43,7 @@ public class TechnologiesController {
 	@DeleteMapping("/{id}")
 	public void delete(int id) {
 		this.technologyService.delete(id);
+	
 	}
 	
 	
